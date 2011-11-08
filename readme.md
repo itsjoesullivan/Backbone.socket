@@ -2,7 +2,7 @@
 Persist backbone models over socket.io websockets; you provide the datastore
 
 ##Usage
-Client:
+###Client:
 
 - Establish websocket connection
 - Require backbone.socket.js _after_ **socket** global is available
@@ -19,7 +19,7 @@ OR
 		...
 	});
 	```
-Server:
+###Server:
 
 - Attach a sync()-compliant datastore to websockets:
 
