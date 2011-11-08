@@ -10,8 +10,20 @@ Client:
 
 Server:
 
-- 
-- Attach handler to websocket
+- Attach a sync()-compliant datastore to backsocket:
+
+	``` javascript
+	// testStore exposes syncInterface(method,model,cb())
+	var backsocket = function(socket) {
+		socket.on('sync', function(method,model,cb) {
+			testStore.syncInterface(method,model,function(resp) {
+				cb(resp);
+			});
+		});
+	}
+	```
+	
+- Attach 'sync' handler to websocket:
 
 	``` javascript
 	io.sockets.on('connection', function (socket) {
