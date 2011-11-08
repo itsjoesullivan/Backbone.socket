@@ -1,4 +1,4 @@
-#backbone-socket
+#Backbone.socket
 Persist backbone models over websockets. You provide the datastore.
 
 ###Dependencies
