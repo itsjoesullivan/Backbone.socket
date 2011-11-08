@@ -1,5 +1,5 @@
 #backbone-socket
-Persist backbone models over socket.io websockets; you provide the datastore
+Persist backbone models over socket.io websockets. You provide the datastore.
 
 ##Usage
 ###Client:
@@ -31,3 +31,10 @@ OR
 		});
 	});
 	```
+	
+##Test
+Run server.js then visit 'localhost:3000/client/test.html' for jasmine test
+
+##To-dos:
+- General server-side spec for sync()-compliance
+- MongoDB syncInterface()
