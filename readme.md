@@ -1,3 +1,2 @@
-
-#bone-and-socket
+#backbone-socket
 Persist backbone models over websockets
