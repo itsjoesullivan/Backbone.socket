@@ -2,7 +2,7 @@
 Persist backbone models over websockets. You provide the datastore.
 
 ###Dependencies
-	Example assumes you're running socket.io on a node.js server.
+Assumes you're running socket.io on a node.js server.
 
 ##Usage
 ###Client:
