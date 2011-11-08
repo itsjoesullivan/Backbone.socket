@@ -1,5 +1,8 @@
 #backbone-socket
-Persist backbone models over socket.io websockets. You provide the datastore.
+Persist backbone models over websockets. You provide the datastore.
+
+###Dependencies
+	Example assumes you're running socket.io on a node.js server.
 
 ##Usage
 ###Client:
