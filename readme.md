@@ -13,7 +13,7 @@ Server:
 - Attach a sync()-compliant datastore to backsocket:
 
 	``` javascript
-	// testStore exposes syncInterface(method,model,cb())
+	// Example testStore exposes syncInterface(method,model,cb())
 	var backsocket = function(socket) {
 		socket.on('sync', function(method,model,cb) {
 			testStore.syncInterface(method,model,function(resp) {
