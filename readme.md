@@ -11,6 +11,7 @@ Client:
 Server:
 
 - Attach handler to websocket
+
 	io.sockets.on('connection', function (socket) {
 		//catch 'sync' requests
 		var backSocket = require('./lib/backSocket');
