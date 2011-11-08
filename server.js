@@ -8,8 +8,7 @@ var io = io.listen(app);
 app.listen(3000);
 
 io.sockets.on('connection', function (socket) {
-	
-	//apply 
+	//catch 'sync' requests
 	var backSocket = require('./lib/backSocket');
 	backSocket(socket);
 });
