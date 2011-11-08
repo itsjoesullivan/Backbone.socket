@@ -8,6 +8,17 @@ Client:
 - Require backbone.socket.js _after_ **socket** global is available
 - Create / extend BackboneSocket as you would Backbone.Model
 
+OR
+
+- Just overwrite sync():
+
+	``` javascript
+	var BackboneSocket = Backbone.Model.extend({
+		...
+		sync: socketSync
+		...
+	});
+	```
 Server:
 
 - Attach a sync()-compliant datastore to websockets:
