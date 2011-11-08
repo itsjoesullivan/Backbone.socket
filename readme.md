@@ -10,19 +10,6 @@ Client:
 
 Server:
 
-- Attach a  to backSocket:
-
-	``` javascript
-	// Example testStore exposes syncInterface(method,model,cb())
-	var backSocket = function(socket) {
-		socket.on('sync', function(method,model,cb) {
-			testStore.syncInterface(method,model,function(resp) {
-				cb(resp);
-			});
-		});
-	}
-	```
-	
 - Attach a sync()-compliant datastore to websockets:
 
 	``` javascript
