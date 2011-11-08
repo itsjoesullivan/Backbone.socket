@@ -33,7 +33,7 @@ OR
 	```
 	
 ##Test
-Run server.js then visit 'localhost:3000/client/test.html' for jasmine test
+Run server.js then visit 'localhost:3000/client/test.html' for jasmine test. You may need to 'npm install server.io'.
 
 ##To-dos:
 - General server-side spec for sync()-compliance
