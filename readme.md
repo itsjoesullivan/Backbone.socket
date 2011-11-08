@@ -10,7 +10,7 @@ Client:
 
 Server:
 
-- Attach a sync()-compliant datastore to backSocket:
+- Attach a  to backSocket:
 
 	``` javascript
 	// Example testStore exposes syncInterface(method,model,cb())
@@ -23,12 +23,12 @@ Server:
 	}
 	```
 	
-- Attach 'sync' handler to websocket:
+- Attach a sync()-compliant datastore to websockets:
 
 	``` javascript
-	io.sockets.on('connection', function (socket) {
-		//catch 'sync' requests
-		var backSocket = require('./lib/backSocket');
-		backSocket(socket);
+	socket.on('sync', function(method,model,cb) {
+		testStore.syncInterface(method,model,function(resp) {
+			cb(resp);
+		});
 	});
 	```
