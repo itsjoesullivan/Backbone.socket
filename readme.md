@@ -40,7 +40,7 @@ OR
 - To use MongoDB/Mongoose:
 
  	``` javascript
-		var mongoStore = require('./lib/mongoStore);
+		var mongoStore = require('./lib/mongoStore');
 		socket.on('sync', function(method,model,cb) {
 			mongoStore(method,model,function(resp) {
 				cb(resp);
