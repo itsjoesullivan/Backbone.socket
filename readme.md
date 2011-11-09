@@ -49,9 +49,12 @@ OR
 	```
 	
 	- This is a pretty simple implementation. Edit ./lib/mongoStore.js to your database/model name
-
+	
 ##Test
 Run server.js then visit 'localhost:3000/client/test.html' for jasmine test. You may need to 'npm install server.io'.
+
+##Roll your own
+To test your own datastore just make sure you're passing tests in './lib/general.spec.js' and './client/test.js'
 
 ##To-dos:
 - General server-side spec for sync()-compliance
