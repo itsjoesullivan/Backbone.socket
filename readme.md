@@ -35,9 +35,24 @@ OR
 	});
 	```
 	
+##Mongoose
+
+- To use MongoDB/Mongoose:
+
+ 	``` javascript
+		var mongoStore = require('./lib/mongoStore);
+		socket.on('sync', function(method,model,cb) {
+			mongoStore(method,model,function(resp) {
+				cb(resp);
+			});
+		});
+	```
+	
+	- Note this is a pretty simple implementation, check out ./lib/mongoStore.js to switch database/model name
+
 ##Test
 Run server.js then visit 'localhost:3000/client/test.html' for jasmine test. You may need to 'npm install server.io'.
 
 ##To-dos:
 - General server-side spec for sync()-compliance
-- MongoDB syncInterface()
+- More configurable MongoDB interface
