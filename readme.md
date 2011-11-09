@@ -35,7 +35,7 @@ OR
 	});
 	```
 	
-##Mongoose
+##MongoDB
 
 - To use MongoDB/Mongoose:
 
@@ -48,7 +48,7 @@ OR
 		});
 	```
 	
-	- Note this is a pretty simple implementation, check out ./lib/mongoStore.js to switch database/model name
+	- This is a pretty simple implementation. Edit ./lib/mongoStore.js to your database/model name
 
 ##Test
 Run server.js then visit 'localhost:3000/client/test.html' for jasmine test. You may need to 'npm install server.io'.
