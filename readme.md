@@ -1,5 +1,5 @@
 #Backbone.socket
-Persist backbone models over websockets. Includes an in-memory datastore, an interface for MongoDB (through Mongoose), and generalized tests on both client- and server- side.
+Persist backbone models over websockets. Includes an in-memory datastore, an interface for MongoDB (through Mongoose), and generalized tests on both client- and server- side to help you roll your own.
 
 ###Dependencies
 Assumes you're running socket.io on a node.js server.
