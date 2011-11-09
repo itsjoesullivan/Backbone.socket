@@ -57,5 +57,4 @@ Run server.js then visit 'localhost:3000/client/test.html' for jasmine test. You
 To test your own datastore just make sure you're passing tests in './lib/general.spec.js' and './client/test.js'
 
 ##To-dos:
-- General server-side spec for sync()-compliance
 - More configurable MongoDB interface
