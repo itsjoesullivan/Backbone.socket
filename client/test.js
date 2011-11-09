@@ -56,10 +56,9 @@ describe('backbone.socket', function() {
 	it('can update', function() {
 		var testModel = new BackboneSocket();
 		testModel.set({'test':true});
-		testModel.save({}, {success: function(resp) {
-			expect(resp.id).toBeDefined();
-			expect(resp.get('test')).toBeTruthy();
-			testModel.save({'test':false},{success:function(model,resp) {
+		testModel.save({}, {success: function(model,resp) {
+			expect(resp.test).toBeTruthy();
+			model.save({'test':false},{success:function(model,resp) {
 				expect(model.get('test')).toBeFalsy();
 				jasmine.asyncSpecDone();
 			}});
