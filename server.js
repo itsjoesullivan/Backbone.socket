@@ -14,18 +14,21 @@ var mongoStore = require('./lib/mongoStore');
 
 io.sockets.on('connection', function (socket) {
 	
-	/*
 	socket.on('sync', function(method,model,cb) {
 		testStore.syncInterface(method,model,function(resp) {
 			cb(resp);
 		});
 	});
+	
+	
+	/* or use mongoStore
+		N.B. uncomment idAttribute in ./backbone.socket.js
 	*/
 	
-	socket.on('sync', function(method,model,cb) {
+	/*socket.on('sync', function(method,model,cb) {
 		mongoStore(method,model,function(resp) {
 			cb(resp);
 		});
-	});
+	});*/
 	
 });

@@ -10,7 +10,7 @@ socketSync = function(method,model,options) {
 
 var BackboneSocket = Backbone.Model.extend({
 	
-	idAttribute: "_id", //for MongoDB or CouchDB
+	//idAttribute: "_id", //for MongoDB or CouchDB
 	
 	sync: socketSync
 });
